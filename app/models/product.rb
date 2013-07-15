@@ -1,3 +1,3 @@
 class Product < ActiveRecord::Base
-	belongs_to :user
+	validates_presence_of :price, :name
 end
