@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
 	def availableindex
-		@products_items = Player.all
+		@products_items = Product.all
 	end
 
 	def remove
