@@ -132,3 +132,5 @@ ActiveRecord::PendingMigrationError (Migrations are pending; run 'rake db:migrat
   Rendered /Users/michaelliu/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
   Rendered /Users/michaelliu/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
   Rendered /Users/michaelliu/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateProducts (20130709190752)

@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-	has_many :products, :class_name => "Transaction"
+	has_many :products, :class_name => "Transaction", :foreign_key => "buyer_id"
 	attr_protected :password
 	attr_accessible :login
 	validates_presence_of :login, :password
