@@ -1,5 +1,4 @@
 class Transaction < ActiveRecord::Base
-	has_one :buyer, :class_name => "User"
-	has_one :seller, :class_name => "User"
-	has_one :product
+	belongs_to :buyer_id, :class_name => "User", :foreign_key => "buyer_id"
+	has_one :product_id, :class_name => "Product", :foreign_key => "product_id"
 end

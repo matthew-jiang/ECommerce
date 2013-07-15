@@ -3,13 +3,8 @@ class UsersController < ApplicationController
 		@user_items = User.all
 	end
 
-	def transactions
-		@seller = User.find(params[:id])
-		@user_items = @seller.transactions
-	end
-
-	def create
-		@new_user = User.create params[:name, :password]
+	def add
+		User.create params[:name, :password]
 	end
 
 	def login

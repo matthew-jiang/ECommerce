@@ -1,9 +1,9 @@
 class TransactionsController < ApplicationController
-	def purchase
+	def index
 		@transactions_items = Transaction.all
 	end
+
 	def buy
-		@user = User.find(param[:user_id])
-		@transactions_items = @user.Transaction.all
+		Transaction.create(:buyer_id => params[:buyer_id], :product_id => params[:product_id])
 	end
 end

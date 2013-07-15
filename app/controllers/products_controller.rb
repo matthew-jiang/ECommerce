@@ -1,11 +1,12 @@
 class ProductsController < ApplicationController
-	def availableindex
+	def index
 		@products_items = Product.all
 	end
 
 	def remove
 		@product = Product.find(params[:id])
-		@product.destroy
+		@product.destroy()
+    redirect_to :action => index
 	end
 
 end
