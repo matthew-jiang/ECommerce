@@ -1,13 +1,14 @@
 class UsersController < ApplicationController
 	def index
-		@user_items = User.all
+		#Somehow show info of logged in user
 	end
 
 	def add
-		User.create params[:name, :password]
+		User.create(params[:name, :password])
 	end
 
 	def login
-		@user = User.find(params[:id])
+		@user = User.find(params[:name, :password])
+		redirect_to :action => 'index'
 	end
 end
